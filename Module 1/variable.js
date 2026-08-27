@@ -164,7 +164,7 @@ console.log(myName);
   to a variable for the first time.
 */
 
-let firstName = "Abdullah";
+// let firstName = "Abdullah";
 
 console.log(firstName);
 
