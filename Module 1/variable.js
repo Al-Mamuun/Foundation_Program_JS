@@ -6,41 +6,6 @@
   A variable is a container used to store data.
 
   Example:
-  let name = "Rahim";
-
-  Here:
-  name  → Variable
-  "Rahim" → Value
-*/
-
-
-// ============================================================
-// 🧩 VARIABLE DECLARATION
-// ============================================================
-
-/*
-  JavaScript has 3 keywords for declaring variables:
-
-  1. var
-  2. let
-  3. const
-
-  Modern JavaScript:
-  ✅ Prefer `const`
-  ✅ Use `let` when the value needs to change
-  ⚠️ Avoid `var` in modern code
-*/
-
-
-// ============================================================
-// 1️⃣ let
-// ============================================================
-
-/*
-  `let` is used when the value of a variable
-  may change later.
-
-  Reassignment → ✅ Allowed
 */
 
 let name = "Rahim";
@@ -48,9 +13,25 @@ let name = "Rahim";
 console.log(name);
 // Output: Rahim
 
-name = "Karim";
 
-console.log(name);
+// ============================================================
+// 1️⃣ let
+// ============================================================
+
+/*
+  `let` is used when the value may change later.
+
+  Reassignment → ✅ Allowed
+*/
+
+let userName = "Rahim";
+
+console.log(userName);
+// Output: Rahim
+
+userName = "Karim";
+
+console.log(userName);
 // Output: Karim
 
 
@@ -59,8 +40,7 @@ console.log(name);
 // ============================================================
 
 /*
-  `const` is used when we don't want to
-  reassign the variable.
+  `const` is used when the value should not be reassigned.
 
   Reassignment → ❌ Not Allowed
 */
@@ -79,11 +59,12 @@ console.log(age);
 // ============================================================
 
 /*
-  `var` is the old/legacy way of declaring variables.
+  `var` is the older way of declaring variables.
 
-  It can be reassigned and redeclared.
+  Reassignment → ✅ Allowed
+  Redeclaration → ✅ Allowed
 
-  In modern JavaScript, prefer `let` and `const`.
+  Modern JavaScript → Prefer `let` and `const`.
 */
 
 var city = "Dhaka";
@@ -102,8 +83,8 @@ console.log(city);
 // ============================================================
 
 /*
-  Reassignment means changing the value
-  of an already declared variable.
+  Reassignment means changing the value of
+  an already declared variable.
 */
 
 let country = "Bangladesh";
@@ -112,6 +93,7 @@ country = "India";
 
 console.log(country);
 // Output: India
+
 
 /*
   let   → Reassignment ✅
@@ -129,27 +111,65 @@ console.log(country);
   again in the same scope.
 */
 
+
 // var → Redeclaration ✅
 
-var username = "Mamun";
-var username = "Abdullah";
+var student = "Rahim";
 
-console.log(username);
-// Output: Abdullah
+var student = "Karim";
+
+console.log(student);
+// Output: Karim
 
 
 // let → Redeclaration ❌
 
-// let username = "Mamun";
-// let username = "Abdullah";
+// let student = "Rahim";
+// let student = "Karim";
+
 // ❌ SyntaxError
 
 
 // const → Redeclaration ❌
 
-// const userAge = 21;
-// const userAge = 22;
+// const studentAge = 21;
+// const studentAge = 22;
+
 // ❌ SyntaxError
+
+
+// ============================================================
+// 📝 DECLARATION
+// ============================================================
+
+/*
+  Declaration means creating a variable
+  without assigning a value.
+*/
+
+let myName;
+
+console.log(myName);
+
+// Output:
+// undefined
+
+
+// ============================================================
+// 🎬 INITIALIZATION
+// ============================================================
+
+/*
+  Initialization means assigning a value
+  to a variable for the first time.
+*/
+
+let firstName = "Abdullah";
+
+console.log(firstName);
+
+// Output:
+// Abdullah
 
 
 // ============================================================
@@ -161,21 +181,23 @@ console.log(username);
   of a value.
 */
 
-let userName = "Abdullah";
-const userAge = 21;
+const personName = "Abdullah";
+const personAge = 21;
 const isAdult = true;
 
-console.log(typeof userName);
-// Output: string
+console.log(typeof personName);
+// string
 
-console.log(typeof userAge);
-// Output: number
+console.log(typeof personAge);
+// number
 
 console.log(typeof isAdult);
-// Output: boolean
+// boolean
 
-console.log(typeof userName, typeof userAge, typeof isAdult);
-// Output: string number boolean
+console.log(typeof personName, typeof personAge, typeof isAdult);
+
+// Output:
+// string number boolean
 
 
 // ============================================================
@@ -185,8 +207,8 @@ console.log(typeof userName, typeof userAge, typeof isAdult);
 /*
   JavaScript has 8 main data types.
 
-  Primitive Data Types:
-  ---------------------
+  Primitive:
+  -----------
   1. String
   2. Number
   3. BigInt
@@ -196,9 +218,57 @@ console.log(typeof userName, typeof userAge, typeof isAdult);
   7. Symbol
 
   Non-Primitive:
-  -------------
+  --------------
   8. Object
 */
+
+
+// ============================================================
+// 🧪 DATA TYPE EXAMPLES
+// ============================================================
+
+const text = "Hello";                    // String
+const number = 100;                     // Number
+const bigNumber = 123456789012345n;     // BigInt
+const status = true;                    // Boolean
+
+let nothing;                            // Undefined
+
+const emptyValue = null;                // Null
+
+const uniqueId = Symbol("id");          // Symbol
+
+const person = {                         // Object
+    name: "Abdullah",
+    age: 21
+};
+
+console.log(typeof text);
+// string
+
+console.log(typeof number);
+// number
+
+console.log(typeof bigNumber);
+// bigint
+
+console.log(typeof status);
+// boolean
+
+console.log(typeof nothing);
+// undefined
+
+console.log(typeof emptyValue);
+// object ⚠️
+
+// `typeof null` returns "object" because of
+// a historical behavior in JavaScript.
+
+console.log(typeof uniqueId);
+// symbol
+
+console.log(typeof person);
+// object
 
 
 // ============================================================
@@ -215,9 +285,10 @@ console.log(typeof userName, typeof userAge, typeof isAdult);
   N → Number
   O → Object
 
-  Don't forget:
-  → Undefined
-  → Null
+  Also remember:
+
+  U → Undefined
+  N → Null
 */
 
 
@@ -226,21 +297,35 @@ console.log(typeof userName, typeof userAge, typeof isAdult);
 // ============================================================
 
 /*
-  ✅ Valid:
+  Variable names:
 
-  let name = "Mamun";
-  let age2 = 21;
-  let firstName = "Abdullah";
-  let _value = 100;
-  let $price = 500;
+  ✅ Can contain:
+     letters
+     numbers
+     _
+     $
 
-
-  ❌ Invalid:
-
-  let 2age = 21;        // Cannot start with number
-  let user-name = "";   // Hyphen is not allowed
-  let let = 10;        // Reserved keyword
+  ❌ Cannot:
+     start with a number
+     contain spaces
+     use reserved keywords
 */
+
+
+// ✅ Valid
+
+let firstName = "Abdullah";
+let age2 = 21;
+let _value = 100;
+let $price = 500;
+
+
+// ❌ Invalid
+
+// let 2age = 21;
+// let first-name = "Abdullah";
+// let first name = "Abdullah";
+// let let = 10;
 
 
 // ============================================================
@@ -250,61 +335,32 @@ console.log(typeof userName, typeof userAge, typeof isAdult);
 /*
   JavaScript commonly uses camelCase.
 
-  ✅ Good:
+  Examples:
 
   firstName
   lastName
   phoneNumber
-  isStudent
   totalPrice
-
-
-  ❌ Avoid:
-
-  first_name
-  FirstName
-  firstname
+  isStudent
 */
+
+const fullName = "Abdullah Al Mamun";
+const phoneNumber = "017XXXXXXXX";
+const isStudent = true;
 
 
 // ============================================================
-// 🎯 DECLARATION vs INITIALIZATION
+// ⚡ let vs const vs var
 // ============================================================
 
 /*
-  Declaration:
-  Creating a variable without assigning a value.
-*/
-
-let myName;
-
-console.log(myName);
-// Output: undefined
-
-
-/*
-  Initialization:
-  Giving a value to a variable for the first time.
-*/
-
-myName = "Abdullah";
-
-console.log(myName);
-// Output: Abdullah
-
-
-// ============================================================
-// ⚡ QUICK COMPARISON
-// ============================================================
-
-/*
-  ┌─────────┬────────────┬──────────────┬───────────────┐
-  │ Keyword │ Reassign   │ Redeclare    │ Scope         │
-  ├─────────┼────────────┼──────────────┼───────────────┤
-  │ var     │ ✅ Yes     │ ✅ Yes       │ Function      │
-  │ let     │ ✅ Yes     │ ❌ No        │ Block         │
-  │ const   │ ❌ No      │ ❌ No        │ Block         │
-  └─────────┴────────────┴──────────────┴───────────────┘
+  ┌─────────┬────────────┬──────────────┬────────────┐
+  │         │ Reassign   │ Redeclare    │ Scope      │
+  ├─────────┼────────────┼──────────────┼────────────┤
+  │ var     │ ✅ Yes     │ ✅ Yes       │ Function   │
+  │ let     │ ✅ Yes     │ ❌ No        │ Block      │
+  │ const   │ ❌ No      │ ❌ No        │ Block      │
+  └─────────┴────────────┴──────────────┴────────────┘
 */
 
 
@@ -313,57 +369,69 @@ console.log(myName);
 // ============================================================
 
 /*
-  Use `const` by default.
+  Modern JavaScript:
 
-  If the value needs to change → use `let`.
+  const → Default choice
+  let   → Use when value needs to change
+  var   → Generally avoid
 
-  Avoid `var` in modern JavaScript.
 
   Example:
 */
 
 const university = "UAP";
+
 let semester = 8;
 
 semester = 9;
 
 
 // ============================================================
-// 🚀 FINAL REVISION
+// 🎯 QUICK REVISION
 // ============================================================
 
 /*
   VARIABLE
-  ↓
+      ↓
   Stores data
-  ↓
+      ↓
   var / let / const
 
 
-  let   → Can Reassign ✅
-  const → Cannot Reassign ❌
-  var   → Old / Legacy ⚠️
+  let
+  → Can Reassign ✅
+  → Cannot Redeclare ❌
+
+
+  const
+  → Cannot Reassign ❌
+  → Cannot Redeclare ❌
+
+
+  var
+  → Can Reassign ✅
+  → Can Redeclare ✅
+  → Old / Legacy
 
 
   typeof value
-  ↓
-  Checks the data type
+  → Checks data type
 
 
   Data Types:
-  String
-  Number
-  BigInt
-  Boolean
-  Undefined
-  Null
-  Symbol
-  Object
+  → String
+  → Number
+  → BigInt
+  → Boolean
+  → Undefined
+  → Null
+  → Symbol
+  → Object
 */
 
 
 // ============================================================
-// 💡 KEY TAKEAWAY
+// 🚀 KEY TAKEAWAY
 // ============================================================
 
 /*
