@@ -54,3 +54,6 @@ function addTask(){
 }
 
 addBtn.addEventListener("click", addTask);
+
+console.log(task);
+
