@@ -7,6 +7,7 @@ let taskIdCounter = 1;
 
 function redner(){
     taskList.innerHTML = "";
+    
     task.forEach((task) => {
         let li = document.createElement("li");
         li.classList.add("task-item");
