@@ -14,10 +14,10 @@ function redner(){
 
         let span = document.createElement("span");
         span.classList.add("task-text");
-        span.textContent = task.text;
+        span.textContent = `Task: ${task.text}  Completed: ${task.completed}`;;
 
         let btnwrapper = document.createElement("div");
-        btnwrapper.classList.add("task-button");
+        btnwrapper.classList.add("task-buttons");
 
         let completeBtn = document.createElement("button");
         completeBtn.textContent = "✅";
