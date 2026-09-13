@@ -5,7 +5,7 @@ let taskList = document.getElementById("taskList");
 let task = [];
 let taskIdCounter = 1;
 
-function redner(){
+function render(){
     taskList.innerHTML = "";
     
     task.forEach((task) => {
@@ -21,9 +21,15 @@ function redner(){
 
         let completeBtn = document.createElement("button");
         completeBtn.textContent = "✅";
+        completeBtn.addEventListener("click", () => {    
+            completeTask(task.id);
+        });
 
         let deleteBtn = document.createElement("button");
         deleteBtn.textContent = "❌";
+        deleteBtn.addEventListener("click", () => {
+            deleteTask(task.id);
+        });
 
         btnwrapper.appendChild(completeBtn);
         btnwrapper.appendChild(deleteBtn);
@@ -51,10 +57,23 @@ function addTask(){
 
     task.push(newTask);
     taskInput.value = "";
-    redner();
+    render();
 }
 
 addBtn.addEventListener("click", addTask);
 
 console.log(task);
 
+function completeTask(id) {
+
+    let selectedTask = task.find((task) => task.id == id);
+
+    selectedTask.completed = !selectedTask.completed;
+
+    render();
+}
+
+function deleteTask(id) {
+    task = task.filter((task) => task.id != id);
+    render();
+}
