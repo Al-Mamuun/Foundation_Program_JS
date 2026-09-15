@@ -1,7 +1,9 @@
 import './App.css'
+import TestComponent from './TestComponent'
+
 
 function App() {
-  return <h1>Hello MY First React App</h1>
+  return < TestComponent />
 };
 
 export default App
