@@ -19,6 +19,7 @@ function App() {
     <div>
       <Card name="Mamun" age={19} />
       <Card name="Sakib" age={20} />
+      <Card name="Nabila" age={24} />
     </div>
   );
 }
