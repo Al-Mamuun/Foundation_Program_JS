@@ -1,47 +1,52 @@
-# 🚀 Foundation Program — JavaScript
+# 🚀 Foundation Program — JavaScript & React.js
 
 <p align="center">
   <img src="https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/React.js-Learning-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React.js">
   <img src="https://img.shields.io/badge/Programming%20Hero-Foundation%20Program-FF6B35?style=for-the-badge" alt="Programming Hero">
-  <img src="https://img.shields.io/badge/Status-In%20Progress-2563EB?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/JavaScript-Completed-22C55E?style=for-the-badge" alt="JavaScript Completed">
+  <img src="https://img.shields.io/badge/React.js-In%20Progress-2563EB?style=for-the-badge" alt="React In Progress">
 </p>
 
 <p align="center">
-  <b>📚 Learning JavaScript • 🧠 Building Problem-Solving Skills • 🚀 Preparing for Full-Stack Development</b>
+  <b>📚 JavaScript Completed • ⚛️ Learning React.js • 🧠 Building Problem-Solving Skills • 🚀 Preparing for Full-Stack Development</b>
 </p>
 
 ---
 
 ## 📌 About
 
-This repository documents my **JavaScript learning journey** through the **Programming Hero Foundation Program**.
+This repository documents my learning journey through the **Programming Hero Foundation Program**, starting with **JavaScript fundamentals** and now progressing into **React.js**.
 
-Here, I am practicing JavaScript fundamentals, solving programming problems, completing assignments, and building hands-on exercises to develop a strong foundation in modern JavaScript.
+I have completed the core JavaScript foundation and am currently applying those concepts while learning React.js and building interactive web applications.
 
 > **Learn → Understand → Practice → Build → Improve**
 
-The goal is not just to complete the course, but to **understand the concepts deeply and become confident in writing JavaScript code.**
+The goal is not simply to complete courses, but to **understand concepts deeply, write clean code, solve problems independently, and build real-world applications.**
 
 ---
 
 ## 🎯 Learning Objectives
 
-Through this program, I am focusing on:
+Through this journey, I am focusing on:
 
-* 🧩 Building strong JavaScript fundamentals
+* 🧩 Building strong programming fundamentals
+* 🟨 Mastering modern JavaScript (ES6+)
+* ⚛️ Learning React.js and component-based development
 * 🧠 Improving logical thinking and problem-solving skills
 * 💻 Writing clean, readable, and maintainable code
-* 🔍 Understanding how JavaScript works
-* 🚀 Learning modern JavaScript (ES6+)
-* 🛠️ Applying concepts through hands-on practice
+* 🛠️ Building hands-on projects
+* 🔍 Understanding how modern frontend applications work
 * 📈 Developing consistent coding habits
-* 🌐 Preparing for frontend and full-stack development
+* 🚀 Preparing for full-stack development
 
 ---
 
-## 📚 What I'm Learning
+# 🟨 JavaScript — Completed
 
-### 🟨 JavaScript Fundamentals
+I have completed the JavaScript foundation and practiced the core concepts required for modern frontend development.
+
+### JavaScript Fundamentals
 
 * Variables
 * `var`, `let`, `const`
@@ -60,6 +65,7 @@ Through this program, I am focusing on:
 * Ternary Operator
 * Logical Operators
 * Comparison Operators
+* `==` vs `===`
 
 ### 🔁 Loops
 
@@ -85,7 +91,6 @@ Through this program, I am focusing on:
 * Array Creation
 * Array Indexing
 * Array Traversal
-* Adding & Removing Elements
 * `push()`
 * `pop()`
 * `shift()`
@@ -97,6 +102,7 @@ Through this program, I am focusing on:
 * `find()`
 * `forEach()`
 * `reduce()`
+* `sort()`
 
 ### 🧩 Objects
 
@@ -107,6 +113,7 @@ Through this program, I am focusing on:
 * Nested Objects
 * Object Destructuring
 * Object Manipulation
+* Optional Chaining
 
 ### 🚀 Modern JavaScript — ES6+
 
@@ -132,16 +139,64 @@ Through this program, I am focusing on:
 
 ---
 
+# ⚛️ React.js — Currently Learning
+
+After completing JavaScript, I have started learning **React.js** to build modern, interactive, and component-based web applications.
+
+### Current React Topics
+
+* React Fundamentals
+* React Project Setup
+* Vite
+* Components
+* JSX
+* Props
+* State
+* `useState`
+* Event Handling
+* Conditional Rendering
+* Rendering Lists
+* JavaScript Array Methods in React
+* Component Reusability
+* Basic Form Handling
+
+### 🛠️ React Practice
+
+I am currently practicing React by building small components and applications while strengthening my understanding of:
+
+```text
+JavaScript
+    ↓
+JSX
+    ↓
+Components
+    ↓
+Props
+    ↓
+State
+    ↓
+Events
+    ↓
+Hooks
+    ↓
+Interactive React Applications
+```
+
+> 🚧 React learning is currently **in progress** and this section will be updated as I learn new concepts.
+
+---
+
 ## 🛠️ Technologies & Tools
 
-| Category        | Tools              |
-| --------------- | ------------------ |
-| Language        | JavaScript (ES6+)  |
-| Runtime         | Node.js            |
-| Code Editor     | Visual Studio Code |
-| Version Control | Git                |
-| Repository      | GitHub             |
-| Debugging       | Chrome DevTools    |
+| Category             | Technologies       |
+| -------------------- | ------------------ |
+| Programming Language | JavaScript (ES6+)  |
+| Frontend Library     | React.js           |
+| Build Tool           | Vite               |
+| Runtime              | Node.js            |
+| Code Editor          | Visual Studio Code |
+| Version Control      | Git & GitHub       |
+| Debugging            | Chrome DevTools    |
 
 ---
 
@@ -150,21 +205,15 @@ Through this program, I am focusing on:
 ```text
 Foundation_Program_JS/
 │
-├── Module-01/
-│   ├── practice.js
-│   └── README.md
-│
-├── Module-02/
-│   ├── practice.js
-│   └── README.md
-│
-├── Module-03/
-│   ├── practice.js
-│   └── README.md
-│
-├── Module-04/
-│   ├── practice.js
-│   └── README.md
+├── JavaScript/
+│   ├── Fundamentals/
+│   ├── Conditions/
+│   ├── Loops/
+│   ├── Functions/
+│   ├── Arrays/
+│   ├── Objects/
+│   ├── ES6+/
+│   └── Problem-Solving/
 │
 ├── Assignments/
 │   ├── Assignment-01/
@@ -178,61 +227,45 @@ Foundation_Program_JS/
 │   ├── Loops/
 │   └── Problem-Solving/
 │
+├── React/
+│   ├── Components/
+│   ├── Props/
+│   ├── State/
+│   ├── Hooks/
+│   └── Projects/
+│
 └── README.md
 ```
 
-> 📌 The structure will evolve as I progress through the program.
+> 📌 The repository structure may evolve as my learning progresses.
 
 ---
 
 ## 📈 Learning Progress
 
-| Area                       | Progress       |
+| Area                       | Status         |
 | -------------------------- | -------------- |
-| 🟨 JavaScript Fundamentals | 🟡 In Progress |
-| 🔀 Conditional Statements  | 🟡 In Progress |
-| 🔁 Loops                   | 🟡 In Progress |
-| ⚙️ Functions               | 🟡 In Progress |
-| 📦 Arrays                  | 🟡 In Progress |
-| 🧩 Objects                 | 🟡 In Progress |
-| 🚀 ES6+                    | 🟡 In Progress |
-| 🧠 Problem Solving         | 🟡 In Progress |
-| 📝 Assignments             | 🟡 In Progress |
-| 🛠️ Practice Projects      | ⏳ Upcoming     |
-
----
-
-## 💻 Running the Code
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/Al-Mamuun/Foundation_Program_JS.git
-```
-
-### Navigate to the Project
-
-```bash
-cd Foundation_Program_JS
-```
-
-### Run a JavaScript File
-
-```bash
-node filename.js
-```
-
-For example:
-
-```bash
-node practice.js
-```
+| 🟨 JavaScript Fundamentals | ✅ Completed    |
+| 🔀 Conditional Statements  | ✅ Completed    |
+| 🔁 Loops                   | ✅ Completed    |
+| ⚙️ Functions               | ✅ Completed    |
+| 📦 Arrays                  | ✅ Completed    |
+| 🧩 Objects                 | ✅ Completed    |
+| 🚀 ES6+                    | ✅ Completed    |
+| 🧠 Problem Solving         | ✅ Completed    |
+| 📝 JavaScript Assignments  | ✅ Completed    |
+| ⚛️ React Fundamentals      | 🟡 In Progress |
+| 🧩 React Components        | 🟡 In Progress |
+| 📦 Props & State           | 🟡 In Progress |
+| 🪝 React Hooks             | 🟡 In Progress |
+| 🛠️ React Projects         | ⏳ Upcoming     |
+| 🌐 Full-Stack Development  | ⏳ Upcoming     |
 
 ---
 
 ## 🧠 My Learning Approach
 
-I follow a simple process while learning:
+I follow a simple process throughout my learning journey:
 
 ```text
         📖 Learn
@@ -250,45 +283,61 @@ I follow a simple process while learning:
         🚀 Improve
 ```
 
-My focus is on **understanding and implementing concepts**, rather than simply watching lessons or completing modules.
+My focus is on **understanding concepts and implementing them through code**, rather than simply completing lessons.
 
 ---
 
-## 🔥 Practice Areas
-
-Throughout this repository, I am continuously practicing:
+## 🔥 Learning Journey
 
 ```text
-Variables
-   ↓
-Conditions
-   ↓
-Loops
-   ↓
-Functions
-   ↓
-Arrays
-   ↓
-Objects
-   ↓
+JavaScript Fundamentals
+        ↓
 ES6+
-   ↓
+        ↓
 Problem Solving
-   ↓
-Real-World Projects
+        ↓
+JavaScript Projects
+        ↓
+⚛️ React.js
+        ↓
+React Projects
+        ↓
+Node.js
+        ↓
+Express.js
+        ↓
+MongoDB
+        ↓
+REST APIs
+        ↓
+Authentication
+        ↓
+🚀 MERN Stack
 ```
 
 ---
 
 ## 📌 What's Next?
 
-After building a strong JavaScript foundation, my learning path will continue toward modern full-stack development:
+My next focus is to strengthen my React.js skills and gradually move toward full-stack development.
+
+### Upcoming React Topics
+
+* Advanced Hooks
+* `useEffect`
+* API Integration
+* React Router
+* Forms & Validation
+* Context API
+* State Management
+* Reusable Components
+* CRUD Applications
+* Authentication
+* React Projects
+
+After React, my roadmap will continue toward:
 
 ```text
-JavaScript
-    ↓
-TypeScript
-    ↓
 React.js
     ↓
 Node.js
@@ -297,7 +346,7 @@ Express.js
     ↓
 MongoDB
     ↓
-REST APIs
+REST API
     ↓
 Authentication
     ↓
@@ -310,9 +359,17 @@ Full-Stack Development
 
 ## 📊 Repository Status
 
+### 🟨 JavaScript
+
+✅ **Completed**
+
+The JavaScript foundation has been completed, including fundamentals, ES6+, arrays, objects, functions, problem solving, and practical exercises.
+
+### ⚛️ React.js
+
 🚧 **Currently Learning & Actively Updating**
 
-This repository will continue to grow as I complete new modules, solve more problems, and build projects.
+I am currently learning React.js and adding new practice work and projects to this repository as I progress.
 
 ---
 
