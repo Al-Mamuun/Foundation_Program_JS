@@ -5,12 +5,11 @@ import "./card.css";
 
 export default function Card({name, age}) {
 
-  const [member, setMember] = useState(" ");
+  const [member, setMember] = useState("");
 
   const clickHandler = (memberName) => {
-    console.log("Greetings from " + memberName);
+    setMember(memberName);
   }
-  console.log(member);
 
   // const anotherClickHandler = () => {
   //   console.log("Greetings from another click handler");
@@ -27,6 +26,7 @@ export default function Card({name, age}) {
     className="card">
     <p>Name: {name}</p>
     <p>Age: {age}</p>
+    {member && <p>Greetings: {member}</p>}
   </div>
   );
 };
