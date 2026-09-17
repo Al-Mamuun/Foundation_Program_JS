@@ -12,9 +12,10 @@ const member = [
 function App() {
 
   const [name,setName] = useState("");
+  const [submittedName, setSubmittedName] = useState("");
   const handleSubmit = (e) => {    
     e.preventDefault();
-    console.log(name);
+    setSubmittedName(name);
   }
   return (
     <div>
@@ -24,7 +25,7 @@ function App() {
       </form>
 
       {member.map((member) => (
-        <Card name={member.name} age={member.age} />
+        <Card name={member.name} age={member.age} submittedName={submittedName} />
       ))}
 
       {/* < Counter /> */}
