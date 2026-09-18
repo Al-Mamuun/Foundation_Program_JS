@@ -2,8 +2,6 @@ import "./App.css";
 
 import Counter from "./component/Counter";
 import Display from "./component/Display";
-import NestedDisplay from "./component/NestedDisplay";
-
 import Counterprovider from "./providers/Counter.provider";
 
 function App() {
