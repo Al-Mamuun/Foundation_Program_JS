@@ -3,7 +3,7 @@ import "./card.css";
 
 //* props and children
 
-export default function Card({name, age, submittedName}) {
+export default function Card({name, age, submittedName,submittedAge}) {
 
   // const [member, setMember] = useState("");
 
@@ -27,6 +27,7 @@ export default function Card({name, age, submittedName}) {
     <p>Name: {name}</p>
     <p>Age: {age}</p>
     {submittedName && <p>You submitted: {submittedName}</p>}
+    {submittedAge && <p>You submitted: {submittedAge}</p>}
   </div>
   );
 };
