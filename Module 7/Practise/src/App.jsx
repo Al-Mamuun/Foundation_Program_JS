@@ -1,19 +1,20 @@
-import { useEffect, useState } from "react";
+import { useEffect , useState} from "react";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [anotherCount,setAnotherCount] = useState(0);
+  const [second,setSecond] = useState(0);
 
   useEffect(() => {
-    console.log("Use Effect called");
-  },[count,anotherCount]);
+    const id = setInterval(() => {
+      setSecond((prevSecond) => prevSecond + 1);
+    }, 1000);
+    return () => clearInterval(id);
+  },[]);
 
   return (
-    <>
-      <button onClick={() => setCount(count + 1)}>Increment ({count})</button>
-      <button onClick={() => setAnotherCount(anotherCount + 1)}>Another  Increment ({anotherCount})</button>
-    </>
+    <h1>
+     {second}
+    </h1>
   );
 }
 
