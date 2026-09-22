@@ -21,7 +21,7 @@ function DisplayUsers() {
   return (
     <div>
       {data.map((user) => {
-        return <Card name={user.name} email={user.email} />;
+        return <Card name={user.name} email={user.email}></Card>;
       })}
     </div>
   );
