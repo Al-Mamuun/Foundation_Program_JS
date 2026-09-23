@@ -12,7 +12,7 @@ function Navbar() {
         </Link>
 
         {/* Navigation Links */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-7">
           <Link
             to="/"
             className="hover:text-sky-200 transition duration-200"

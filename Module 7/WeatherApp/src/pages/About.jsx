@@ -1,7 +1,7 @@
 
 function About() {
   return (
-    <div className="flex-1 min-h-[80vh] bg-sky-50 flex items-center justify-center px-4 py-12">
+    <div className="flex-1 min-h-[100vh-...] bg-sky-50 flex items-center justify-center px-4 py-12">
       <div className="max-w-3xl w-full bg-white rounded-2xl shadow-lg p-8 md:p-12 text-center">
 
         {/* Icon */}
