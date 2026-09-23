@@ -14,7 +14,7 @@ function Footer() {
 
         <div className="border-t border-slate-700 pt-4">
           <p className="text-sm text-slate-500">
-            © 2026 WeatherApp. All rights reserved.
+            © 2026 WeatherApp. All rights reserved by Abdullah Al-Mamun.
           </p>
         </div>
 
