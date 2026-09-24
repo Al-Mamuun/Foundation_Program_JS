@@ -1,23 +1,30 @@
-
 function Footer() {
   return (
-    <footer className="bg-slate-900 text-white mt-auto">
-      <div className="max-w-7xl mx-auto px-4 py-8 text-center">
+    <footer className="bg-slate-900 text-white">
+      <div className="max-w-7xl mx-auto px-6 py-5">
+        {/* Footer Main */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+          {/* Logo & Description */}
+          <div className="flex items-center gap-3">
+            <span className="text-2xl">🌤️</span>
 
-        <h2 className="text-xl font-bold mb-2">
-          🌤️ WeatherApp
-        </h2>
+            <div>
+              <h2 className="text-lg font-bold">WeatherApp</h2>
 
-        <p className="text-slate-400 mb-4">
-          Check the weather and stay prepared.
-        </p>
+              <p className="text-xs text-slate-400">
+                Check the weather and stay prepared.
+              </p>
+            </div>
+          </div>
 
-        <div className="border-t border-slate-700 pt-4">
-          <p className="text-sm text-slate-500">
-            © 2026 WeatherApp. All rights reserved by Abdullah Al-Mamun.
+          {/* Copyright */}
+          <p className="text-xs text-slate-500 text-center sm:text-right">
+            © 2026 WeatherApp
+            <span className="mx-1">•</span>
+            Developed by{" "}
+            <span className="text-sky-400 font-medium">Abdullah Al-Mamun</span>
           </p>
         </div>
-
       </div>
     </footer>
   );
