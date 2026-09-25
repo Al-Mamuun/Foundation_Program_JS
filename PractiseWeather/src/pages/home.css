@@ -1,0 +1,31 @@
+main{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    color: gray;
+}
+
+.highlight{
+    color: orange;
+    font-weight: bold;
+}
+
+.half-width{
+    width: 45%;
+    float: left;
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+.half-width img{
+    width: 100%;
+}
+
+.button{
+    text-decoration: none;
+    background-image: linear-gradient(lightsalmon, tomato);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
