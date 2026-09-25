@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./home.css";
 import profilePic from "./images/profile.png";
+import About from "./About";
 
 function Home() {
     const [isClicked, setIsClicked] = useState(false);
@@ -34,17 +35,14 @@ function Home() {
           <h1>
             NextLevel <span className="highlight">Weather</span>
           </h1>
-          <button onClick={() => setIsClicked(true)}>Get Started</button>
+          <button className="button" onClick={() => setIsClicked(true)}>Get Started</button>
         </section>
 
-        {isClicked && (
-          <div>
-            <h2>Welcome to Weather App!</h2>
-            <p>Now you can check the weather.</p>
-          </div>
-        )}
+        {isClicked && <About onClose={() => setIsClicked(false)} />}
       </>
     );
 }
 
 export default Home;
+
+
